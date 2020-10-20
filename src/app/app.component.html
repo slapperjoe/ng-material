@@ -1,0 +1,13 @@
+<div style="padding-top: 50px;">
+  <app-range-slider
+    [style.flex-grow]="1" 
+    #rs1
+    [min]="30"
+    [max]="70"    
+    [step]="1"
+    [thumbLabel]="true"
+    [tickInterval]="5"
+    [(ngModel)]="value">
+  </app-range-slider>
+  {{ value | json }}
+</div>

@@ -1,0 +1,47 @@
+.mat-range-slider
+{
+  &.mat-range-min-slider.mat-slider {
+    display: block;    
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &.mat-range-max-slider.mat-slider
+  {
+    display: block;
+    top: -48px;
+    left: 0;
+    right: 0;
+  }
+}
+
+::ng-deep {
+  .mat-range-slider.mat-range-min-slider.mat-slider > div {
+    > div.mat-slider-ticks-container, > div.mat-slider-track-wrapper
+    {
+      display: none !important; 
+    }
+    > div.mat-slider-thumb-container
+    {
+      z-index: 3;
+    }
+  }
+
+  .mat-range-slider.mat-range-max-slider.mat-slider > div > div.mat-slider-track-wrapper { 
+    > .mat-slider-track-fill
+    {
+      transform: none !important;
+      z-index: 2;
+    
+      /* in order for the filltrack not to disappear */
+      display: block !important; 
+    }
+
+    > .mat-slider-track-background
+    {
+      transform: none !important;
+      z-index: 1;
+    }
+  }
+}
