@@ -10,4 +10,6 @@ export class AppComponent {
   title = 'ng-material';
 
   public value = new NumberRange(35, 65);
+
+  public monies = 12.34;
 }

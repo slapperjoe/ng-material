@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatSliderModule } from '@angular/material/slider';
 import { RangeSliderComponent } from './range-slider/range-slider.component';
+import { CurrencyMaskModule } from 'ng2-currency-mask';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RangeSliderComponent } from './range-slider/range-slider.component';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    MatSliderModule
+    MatSliderModule,
+    CurrencyMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]
